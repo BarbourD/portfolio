@@ -2,7 +2,7 @@ body  {
     display: flex;
     min-height: 100vh;
     flex-flow: column wrap;
-    background-color: whitesmoke;
+    background-color: teal;
 }
 
 main {
@@ -18,8 +18,7 @@ footer {
     border-radius: 50%;
 }
 
-.restitle {
-    display: flex;
-    flex-direction: column wrap;
-    align-content: center;
+.page-footer {
+    background-color: teal;
 }
+     

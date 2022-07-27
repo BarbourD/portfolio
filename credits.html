@@ -6,29 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     
     <title>David Barbour Portfolio</title>
 </head>
 <body>
-    <nav>
-        <style>
-            .nav-wrapper {
-                background-color: teal;
-            }
-        </style>
-        <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img class="headshot" src="images/headshot.png" height="65" width="65"></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <header>
+    <nav class="nav-wrapper">
+      <style>
+        .nav-wrapper {
+          background-color: teal;
+        }
+      </style>
+      <div class="container">
+        <div class="left brand-logo"><a href="index.html"><img class="headshot" src="images/headshot.png" height="65" width="65"></a>
+        </div>
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
             <li><a href="resume.html">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="credits.html">Credits</a></li>
-          </ul>
-        </div>
-      </nav>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
 <div class="card">
   <div class="card-content">
-
         <h1>Credits</h1>
         <p><img class="responsive-img" src="images/linkedin.png" height="50px" width="50px"> <a class="right-align" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a></p>
         <p><img class="responsive-img" src="images/github.png" height="50px" width="50px"> <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a></p>
@@ -64,5 +76,10 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
     <script src="./script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('.sidenav').sidenav();
+      })
+    </script>
 </body>
 </html>
